@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ebe9fc;
+    /* Text color */
+    background-color: #0e1418;
+    /* Website background color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #000f11;
+    /* Primary color for navbar */
+    color: #ebe9fc;
+    /* Text color */
+    border-bottom: solid 2px #b8b8b8;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.brand-btn {
+    padding: 0.5rem;
+    background-color: #84d600;
+    /* Accent color for brand button */
+    color: black;
+    /* Text color */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    /* Remove default underline */
+}
+
+.brand-btn:hover {
+    color: #ffffff;
+    background-color: #304e00;
+}
+
+.right a {
+    color: #ffffff;
+    padding: 0.5rem;
+    /* Text color */
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+    border-radius: 0.5rem;
+}
+
+.right a:hover {
+    background-color: #395c00;
+    /* Secondary color for link hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow columns to wrap to the next line */
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    /* Add some space at the top */
+}
+
+.column {
+    flex: 0 0 calc(33.333% - 20px);
+    /* 33.333% width with 20px gap */
+    background-color: #000f11;
+    /* Secondary color for column background */
+    border-radius: 5px;
+    overflow: hidden;
+    /* Hide overflowing content */
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    /* Rounded corners only on the top */
+}
+
+.column p {
+    padding: 15px;
+}
+
+.column a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #84d600;
+    /* Accent color for column link */
+    color: #ebe9fc;
+    /* Text color */
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+    /* Rounded corners only on the bottom */
+}
+
+.column a:hover {
+    background-color: #46c4bc;
+    /* Primary color for column link hover */
+}
+
+.page-link {
+    display: inline-block;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: larger;
+    letter-spacing: 4px;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #ebe9fc;
+    background-color: #1e5350;
+    border: 4px solid #43b4af;
+    box-shadow: 0px 4px 0px #2f807b;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    color: black;
+    background-color: #00d6b9;
+}
