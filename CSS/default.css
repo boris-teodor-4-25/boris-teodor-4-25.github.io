@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    height: 100%;
+    color: #ebe9fc;
+    /* Text color */
+    background-color: #0e1418;
+    /* Website background color */
+}
+
+body {
+    position: relative;
+    display: inline-block;
+    min-height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #000f11;
+    /* Primary color for navbar */
+    color: #ebe9fc;
+    /* Text color */
+    border-bottom: solid 2px #919191;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar a {
+    font-size: 125%;
+}
+
+.brand-btn {
+    padding: 0.5rem;
+    background: linear-gradient(135deg, #46c4bc, #abff24);
+    /* Accent color for brand button */
+    color: black;
+    /* Text color */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    /* Remove default underline */
+}
+
+.brand-btn:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #276e6a, #4a6e0e);
+
+}
+
+.right a {
+    color: #cecece;
+    padding: 0.5rem;
+    /* Text color */
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+    border-radius: 0.5rem;
+}
+
+.right a:hover {
+    color: white;
+    background-color: #116d67;
+    /* Secondary color for link hover */
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+footer {
+    background-color: #000f11;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #919191;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.author-names {
+    font-size: 18px;
+    color: #46c4bc;
+    margin-top: 5px;
+}

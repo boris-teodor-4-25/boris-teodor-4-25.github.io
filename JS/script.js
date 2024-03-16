@@ -2,16 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hide all sections initially
   const sections = document.querySelectorAll("section");
   sections.forEach((section) => {
-    section.style.display = "none";
+    section.classList.add("active");
   });
 
   // Function to show selected section
   function showSection(sectionId) {
     sections.forEach((section) => {
       if (section.id === sectionId) {
-        section.style.display = "block";
+        section.classList.add("active");
       } else {
-        section.style.display = "none";
+        section.classList.remove("active");
       }
     });
   }
